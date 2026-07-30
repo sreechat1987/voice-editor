@@ -26,6 +26,7 @@
       display: flex;
       gap: 10px;
       margin-top: 15px;
+      flex-wrap: wrap;
     }
     button {
       padding: 12px 20px;
@@ -37,6 +38,7 @@
     }
     #start-btn { background-color: #28a745; color: white; }
     #stop-btn { background-color: #dc3545; color: white; }
+    #fix-btn { background-color: #007bff; color: white; }
     #copy-btn { background-color: #6c757d; color: white; }
     button:disabled { opacity: 0.5; cursor: not-allowed; }
   </style>
@@ -44,13 +46,14 @@
 <body>
 
   <h2>My Voice-to-Text App</h2>
-  <p>Click "Start Dictation" and begin reading. Your words will appear below.</p>
+  <p>Click "Start Dictation" and read your text. When you are done, click "Fix Grammar & Punctuation".</p>
   
   <textarea id="transcription-box" placeholder="Your typed text will appear here..."></textarea>
   
   <div class="btn-group">
     <button id="start-btn">Start Dictation</button>
     <button id="stop-btn" disabled>Stop Dictation</button>
+    <button id="fix-btn">Fix Grammar & Punctuation</button>
     <button id="copy-btn">Copy Text</button>
   </div>
 
