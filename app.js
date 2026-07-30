@@ -1,5 +1,5 @@
 // Paste your Cloudflare Worker URL inside the quotes below
-const WORKER_URL = "YOUR_CLOUDFLARE_WORKER_URL_HERE";
+const WORKER_URL = "https://voice-grammar-api.chatsree9.workers.dev";
 
 const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
 
